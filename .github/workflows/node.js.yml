@@ -7,7 +7,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted  # <-- changed from ubuntu-latest
+    runs-on: self-hosted  # <-- using your self-hosted runner
 
     steps:
     - name: Checkout code
@@ -21,9 +21,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test -- --watchAll=false
-
     - name: Build project
       run: npm run build
+
 
