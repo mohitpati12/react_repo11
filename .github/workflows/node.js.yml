@@ -19,7 +19,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: npm install postcss@^8.4.21 postcss-safe-parser@latest
+      run: npm install --legacy-peer-deps
 
     - name: Build project
       run: npm run build
