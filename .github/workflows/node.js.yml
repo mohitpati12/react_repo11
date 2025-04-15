@@ -3,9 +3,7 @@ name: React CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]  # runs this workflow on PRs targeting master
-
+  
 jobs:
   build:
 
