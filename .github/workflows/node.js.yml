@@ -2,12 +2,14 @@ name: React CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
+  pull_request:
+    branches: [ master ]  # runs this workflow on PRs targeting master
 
 jobs:
   build:
 
-    runs-on: self-hosted  # <-- using your self-hosted runner
+    runs-on: self-hosted  # using your self-hosted runner
 
     steps:
     - name: Checkout code
